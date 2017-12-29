@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+*{
+  font-family: 'Raleway', sans-serif;
+}
+body{
+	background-image: url(../img/grey_wash_wall.png);
+	background-repeat: repeat;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+	z-index:9999;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgba(35, 133, 125, 1);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.wrapper-header{
+  width: 60vw;
+  margin: auto;
+  padding-top: 30px;
+}
+.wrapper{
+  padding-top: 40px;
+  width: 60vw;
+  margin: auto;
+  display: grid;
+  grid-gap: 1em;
+  align-self: stretch;
+  grid-template-columns: repeat (10, 1fr);
+  grid-template-rows: 10px 400px 10px 60px 300px;
+  grid-template-areas:
+  "a2 . . . . . . . . ."
+  "a a a a a a a a a a"
+  "a4 . . . . . . a3 a3 a3"
+  "b b c c d d e e f f"
+  "g g g g g g g g g g";
+}
+.a{
+  grid-area: a;
+  align-self: stretch;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
+  display: grid;
+  grid-gap:70px;
+  grid-template-columns: repeat (10, 1fr);
+  grid-template-areas:
+  "a a b b c c d d e e";
+
+}
+.a-a{
+  grid-area: a;
+  background: #e57373;
+  height: 0px;
+  align-self: end;
+  transition: .5s ease-in-out;
+}
+.b-a{
+  grid-area: b;
+  background: #fff176;
+  height: 0px;
+  align-self: end;
+  transition: .5s ease-in-out;
+}
+.c-a{
+  grid-area: c;
+  background: #64b5f6;
+  height: 0px;
+  align-self: end;
+  transition: .5s ease-in-out;
+}
+.d-a{
+  grid-area: d;
+  background: #ba68c8;
+  height: 0px;
+  align-self: end;
+  transition: .5s ease-in-out;
+}
+.e-a{
+  grid-area: e;
+  background: #81c784;
+
+  height: 0px;
+  align-self: end;
+  transition: .5s ease-in-out;
+}
+.a2{
+  grid-area: a2;
+}
+.a3{
+  grid-area: a3;
+  text-align: right;
+  align-self: center;
+}
+.a4{
+  grid-area: a4;
+  text-align: left;
+  align-self: center;
+}
+.b{
+  grid-area: b;
+  align-self: stretch;
+}
+.c{
+  grid-area: c;
+  align-self: stretch;
+}
+.d{
+  grid-area: d;
+  align-self: stretch;
+}
+.e{
+  grid-area: e;
+  align-self: stretch;
+}
+.f{
+  grid-area: f;
+  align-self: stretch;
+}
+.g{
+  grid-area: g;
+}
+button {
+  width: 110px;
+  text-align: center;
+  border: 0;
+  background: #0087cc ;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599 ;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 10px 15px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599 ;
+  transform: translateY(3px);
+}
+.Registreernu{
+	color:white;
+	float:right;
+	margin-right:1em;
+}
